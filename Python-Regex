@@ -1,0 +1,79 @@
+# Py-Regex
+
+# Featuures
+
+1. PCRE Support (Perl Compatible regular Expressions)
+
+a. '.' - matches any char sans '\n' || newline and subsequent chars (unless overridden)
+
+b. '*' - matches 0 or more (greedy) i.e '.*' match any number of character on the line
+
+c. '+' - matches 1 or more time greedy  i.e '\s+' - search for 1 or more whitespace chars
+
+d. '?' - matches 0 or 1 - also makes: '[*+]' -non greedy
+
+e. '{n}' -match n times i.e '[a-z]{3}' i.e 'dog' || 'cat'
+
+f. '{m,n}' -matches at least m times up to n times: i.e '[a-z]{5,6}' i.e 'dog' || 'dogs' || 'cat' || 'cats'
+
+g. '(A|B)' -alternate match: i.e '(cat|dog)'
+
+h. '\s' - whitespace
+
+i. '\d' - digits
+
+j. '\w' - alphanumeric chars: [a-zA-Z0-9]
+
+Note: Compliments are typically uppercase versions i.e \S, \D, \W
+
+2. Useful Functions
+
+a. 'match' -searches, by default form the beginning of the string and NOT through NEWLINES: \n
+
+b. 'search' -searches, the entire block, including the NEWLINE for REGEX
+
+Both functions return: match groups
+
+c. 'sub' - Substitution
+
+d. 'split'
+
+e. 'findall'
+
+f. 'escape'
+
+g. 'compile' - for efficient reuse
+'import re && help(re)'
+
+Usage:
+1. Match - line based (Not including \n)
+
+1a. product='LinuxCBT'
+
+1b. import re
+
+1c. re.match('\w', product) - simple match of 1 alphanumeric character   ---> L ---> alphanumeric character
+
+1d. If product='1LinuxCBT'   ---> 1  ---> alphanumeric character
+
+1e. re.match('\w{5}', product) ---> If you want to match first 5 alpha-numeric characters from the Value ---> Linux
+
+1f. re.match('\w{5,7}', product)  ---> Provide this range of alpha numeric character ---> LinuxCB
+
+1g. re.match('\w{5,8}', product)  ---> Provide the FULL STRING ---> LinuxCBT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# End
