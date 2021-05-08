@@ -62,6 +62,24 @@ Usage:
 
 1g. re.match('\w{5,8}', product)  ---> Provide the FULL STRING ---> LinuxCBT
 
+1h. re.match('^l', product)
+
+1i. re.match('^L', product)
+
+1j. re.match('^l', product, flags=re.I) ---> Ignore case just like in bach grep -ir
+
+1k. re.match('^[0-9]l', product, flags=re.I) ---> same but searches 0-9 at the start of the string.
+
+1l. re.match('.{4,5}CBT$', product, flags=re.I)   ---> product='LinuxCBT' ---> import re    || re.match('.{4,5}CbT$', product, flags=re.I)
+
+1m. In case of space in the string ---> product = 'LinuxCBT ' ---> import re ---> re.match('.{4,5}cbt $', product, flags=re.I)
+
+# Note: This means preceding (before cbt  ---> 4,5 characters ---> re.match('.{4,5}cbt\s+$', product, flags=re.I)
+
+1n. In case of (o more spaces) space we can use \s+  ---> if you are expecting one or more spaces put a + ---> product = '12345CBT           '  ---> re.match('.{4,5}cbt\s+$', product, flags=re.I)
+
+   re.match('.{4,5}cbt\s*$', product, flags=re.I)
+
 
 
 
