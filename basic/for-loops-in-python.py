@@ -1,8 +1,4 @@
-x=("Python for DevOps automation").split()
+x="1 2 3 4 5"
 
-for data in x:
-    print(data)
-    print ('asim')
-    print ('qasim')
-
-print ("This is the end of program")
+for i in x:
+    print(i)

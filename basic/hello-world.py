@@ -1,4 +1,1 @@
-print ("asim")
-
-print ("taha")
-
+print("Hello World in Python")
