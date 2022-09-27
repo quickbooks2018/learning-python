@@ -1,0 +1,10 @@
+# tuple mean storing multiple value in a single variable
+
+mytuple = 'asim', 'qasim'
+
+
+print(mytuple)
+
+print(mytuple[0])
+
+print(mytuple[1])
