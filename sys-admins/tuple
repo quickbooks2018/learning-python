@@ -1,6 +1,12 @@
-# tuple mean storing multiple value in a single variable
+# tuple mean storing multiple value in a single variable, tuple is immutable.
+
+# Mutable mean change
+
+# Immutable mean can not be changed
 
 mytuple = 'asim', 'qasim'
+
+mystring = 'taha'
 
 
 print(mytuple)
@@ -8,3 +14,7 @@ print(mytuple)
 print(mytuple[0])
 
 print(mytuple[1])
+
+print(type(mytuple))
+
+print(type(mystring))
