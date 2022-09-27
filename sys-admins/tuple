@@ -28,3 +28,20 @@ print(mylist)
 mylist2 = mylist, mytuple
 
 print(mylist2)
+
+print(type(mylist2))  # Note it is a tuple, not a list anymore
+
+# Converting list into tuple
+mylist3 = ['asim', 'qsim', 'taha']
+
+mytuple2 = tuple(mylist3)
+
+print(mytuple2)
+
+print(type(mytuple2))
+
+# Adding two tuples
+
+addtuple = mytuple + mytuple2
+
+print(addtuple)
