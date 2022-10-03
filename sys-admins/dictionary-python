@@ -36,3 +36,15 @@ print(myvalues)
 
 # advantage of converting this into list
 print(myvalues[0])
+
+# delete removes last item
+
+#del mykeys[0]
+
+#print(mykeys)
+
+# pop removes item but asks for a key, better is to use pop
+
+mykeys.pop(2)   # On index number we have Role it removes Role
+
+print(mykeys)
