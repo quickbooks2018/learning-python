@@ -17,3 +17,22 @@ mydetails['City'] = 'Lahore'
 print(mydetails)
 
 print(mydetails['City'])
+
+# print all keys
+print(mydetails.keys())
+
+# print all values
+print(mydetails.values())
+
+# print all keys in the form list
+mykeys = list(mydetails.keys())
+
+print(mykeys)
+
+# print all values in the form of list
+myvalues = list(mydetails.values())
+
+print(myvalues)
+
+# advantage of converting this into list
+print(myvalues[0])
