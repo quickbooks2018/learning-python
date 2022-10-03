@@ -45,6 +45,6 @@ print(myvalues[0])
 
 # pop removes item but asks for a key, better is to use pop
 
-mykeys.pop(2)   # On index number we have Role it removes Role
+mykeys.pop(1)   # On index number we have Role it removes Role
 
 print(mykeys)
