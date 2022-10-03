@@ -1,0 +1,11 @@
+#########################
+# Dictionary is key value
+#########################
+
+mydetails = {"Name": "Muhammad Asim", "Age": "40", "Role": "DevOps"}
+
+mydetails['Role'] = 'Sre & DevOPs'   # updated value of key
+
+print(mydetails)
+
+print(mydetails['Role'])
