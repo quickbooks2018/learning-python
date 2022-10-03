@@ -9,3 +9,11 @@ mydetails['Role'] = 'Sre & DevOPs'   # updated value of key
 print(mydetails)
 
 print(mydetails['Role'])
+
+# Adding value in dictionary
+
+mydetails['City'] = 'Lahore'
+
+print(mydetails)
+
+print(mydetails['City'])
