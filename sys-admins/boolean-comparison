@@ -1,0 +1,31 @@
+myvalue = True
+
+print(type(myvalue))
+
+myboolstring = 'This is Muhammad Asim DevOps Engineer'
+
+x = 100
+
+y = 200
+
+z = x >= y
+
+print(bool(x))
+
+print(bool(y))
+
+print(bool(z))
+
+print(bool(myboolstring))
+
+mylist = [1, 2, 'test', 10]
+
+p = 2 in mylist
+b = 2 not in mylist
+c = 'asim' in mylist
+d = 'test' in mylist
+
+print(bool(p))
+print(bool(b))
+print(bool(c))
+print(bool(d))
